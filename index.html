@@ -3,9 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Приглашение</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      color: #627568;
+    }
+
+    img {
+      display: inline-block;
+      width: 100%;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .container {
+      margin: 10px auto;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .container-title {
+      margin: 40px 0;
+      font-size: 40px;
+    }
+
+    .banner-title {
+      font-size: 45px;
+    }
+
+    /* Блок "План дня" */
+    .container-plan .row {
+      display: flex;
+      justify-content: center;
+      margin-top: 70px;
+    }
+
+    .container-plan .box {
+      width: 100px;
+      height: 100px;
+      padding: 0 30px;
+    }
+
+    .container-plan .box-text{
+      font-size: 20px !important;
+      line-height: 30px;
+    }
+
+    .container-plan .box-text.left{
+      text-align: left;
+    }
+
+    .container-plan .box-text.right{
+      text-align: right;
+    }
+
+    /* Блок "Детали" */
+    .container-details .atom {
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
+      background-color: #627568;
+      margin: 0 auto;
+    }
+
+    .container-details p {
+      margin: 30px 0;
+    }
+  </style>
 </head>
 <body>
-  
+  <div class="container banner">
+    <div class="banner-title">Андрей</div>
+    <div class="banner-symbol">&</div>
+    <div class="banner-title">Юлия</div>
+  </div>
+
+  <div class="container">
+    <div class="container-title">Дорогие и любимые!</div>
+    <div class="container-description">
+      С огромной радостью приглашаем вас <br />
+      на самое яркое событие в нашей жизни - свадьбу! <br />
+      Мы будем счастливы отметить этот день <br />
+      в кругу родных и близких нам людей. <br />
+      С нетерпением ждем Вас!
+    </div>
+  </div>
+
+  <div class="container container-date">
+    <div class="container-title">Мы ждём Вас</div>
+  </div>
+
+  <div class="container">
+    <div class="container-title">Как добраться</div>
+  </div>
+
+  <div class="container">
+    <div class="container-title">План дня</div>
+    <div class="container-plan">
+      <div class="row">
+        <div class="box box-image">
+          <img src="image/plans/glasses.png" alt="Welcome">
+        </div>
+        <div class="box box-text left">
+          <div class="time">14:00</div>
+          <p>Welcome, сбор гостей</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box box-text right">
+          <div class="time">15:00</div>
+          <p>Выездная регистрация</p>
+        </div>
+        <div class="box box-image">
+          <img src="image/plans/rings.png" alt="Регистрация">
+        </div>
+      </div>
+      <div class="row">
+        <div class="box box-image">
+          <img src="image/plans/devices.png" alt="Банкет">
+        </div>
+        <div class="box box-text left">
+          <div class="time">16:00</div>
+          <p>Праздничный банкет</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box box-text right">
+          <div class="time">20:00</div>
+          <p>Свадебный торт</p>
+        </div>
+        <div class="box box-image">
+          <img src="image/plans/cake.png" alt="Торт">
+        </div>
+      </div>
+      <div class="row">
+        <div class="box box-image">
+          <img src="image/plans/fireworks.png" alt="Завершение">
+        </div>
+        <div class="box box-text left">
+          <div class="time">22:00</div>
+          <p>Завершение вечера</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container container-details">
+    <div class="container-title">Детали</div>
+    <p>
+      Ваши улыбки и смех подарят нам незабываемое <br /> 
+      счастье в этот день, а пожелания в конвертах <br /> 
+      помогут осуществить наши мечты!
+    </p>
+    <div class="atom"></div>
+    <p>
+      К великому сожалению, в ресторане нет детских зон и нет <br />
+      возможности пригласить аниматоров для того, чтобы занять <br />  
+      самых маленьких наших гостей, поэтому просим заранее подумать <br />  
+      о том, с кем оставить Вашу кроху на праздничный вечер. 
+    </p>
+    <div class="atom"></div>
+    <p>
+      Просим Вас не дарить нам цветы - мы не успеем <br />  
+      насладиться их красотой до отъезда. А вот бутылочке вина <br />
+      для нашей семейной винотеки будем очень рады!
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="container-title">Дресс-код</div>
+    <p>
+      Для нас главное - ваше присутствие! Но мы будем рады, <br /> 
+      если в своих нарядах Вы поддержите цветовую гамму нашей свадьбы. 
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="container-title">Анекта гостя</div>
+    <p>
+      Чтобы мы могли сделать праздник еще <br />
+      лучше, ответьте, пожалуйста, на <br />
+      несколько вопросов ниже
+    </p>
+    <form action="">
+      <div class="form-container">
+        <label for="fio">Напишите, пожалуйста, Ваше ФИО </label>
+        <input type="text" name="fio" id="fio">
+      </div>
+
+      <div class="form-container">
+        <label for="">Сможете ли присутствовать на нашем торжестве?</label>
+        <input type="radio" name="" id="">
+      </div>
+    </form>
+  </div>
 </body>
 </html>
