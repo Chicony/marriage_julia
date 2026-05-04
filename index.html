@@ -8,6 +8,7 @@
     * {
       padding: 0;
       margin: 0;
+      box-sizing: border-box;
       color: #627568;
     }
 
@@ -73,6 +74,40 @@
 
     .container-details p {
       margin: 30px 0;
+    }
+
+    /* Форма обратной связи */
+    .form-feedback .btn-form {
+      padding: 18px 34px;
+      border: none;
+      background-color: #627568;
+      color: #fff;
+      font-size: 16px ;
+    }
+
+    .form-container {
+      text-align: start;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .form-container label {
+      display: block;
+    }
+
+    .form-container .input-title {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-container input[type='text']{
+      width: 100%;
+      padding: 0 20px;
+      height: 60px;
+      font-size: 16px;
+      color: rgb(98, 117, 104);
+      border: 1px solid rgb(98, 117, 104);
+      background-color: transparent;
     }
   </style>
 </head>
@@ -185,22 +220,82 @@
 
   <div class="container">
     <div class="container-title">Анекта гостя</div>
-    <p>
+    <p style="margin-bottom: 20px;">
       Чтобы мы могли сделать праздник еще <br />
       лучше, ответьте, пожалуйста, на <br />
       несколько вопросов ниже
     </p>
-    <form action="">
+    <form action="" class="form-feedback">
       <div class="form-container">
-        <label for="fio">Напишите, пожалуйста, Ваше ФИО </label>
-        <input type="text" name="fio" id="fio">
+        <label for="fio" class="input-title">Напишите, пожалуйста, Ваше ФИО </label>
+        <input type="text" name="fio" id="fio" placeholder="ФИО">
       </div>
 
       <div class="form-container">
-        <label for="">Сможете ли присутствовать на нашем торжестве?</label>
-        <input type="radio" name="" id="">
+        <div class="input-title">Сможете ли присутствовать на нашем торжестве?</div>
+        <label>
+          <input type="radio" name="presence">
+          С удовольствием приду
+        </label>
+        <label>
+          <input type="radio" name="presence">
+          К сожалению, не смогу присутствовать
+        </label>
+        <label>
+          <input type="radio" name="presence">
+          Буду со своей парой
+        </label>
       </div>
+      <div class="form-container">
+        <label for="partnerfio" class="input-title">Напишите ФИО партнера</label>
+        <input type="text" name="partnerfio" id="partnerfio" placeholder="ФИО партнера">
+      </div>
+      
+      <div class="form-container">
+        <div class="input-title">Что предпочитаете из напитков?</div>
+        <div class="input-description">(возможно отметить несколько вариантов)</div>
+        <label>
+          <input type="checkbox" name="alcohol" value="red_wine">
+          Красное вино
+        </label>
+        <label>
+          <input type="checkbox" name="alcohol" value="white_wine">
+          Белое вино
+        </label>
+        <label>
+          <input type="checkbox" name="alcohol" value="champagne">
+          Шампанское
+        </label>
+        <label>
+          <input type="checkbox" name="alcohol" value="whiskey">
+          Виски
+        </label>
+        <label>
+          <input type="checkbox" name="alcohol" value="vodka">
+          Водка
+        </label>
+        <label>
+          <input type="checkbox" name="alcohol" value="cognac">
+          Коньяк
+        </label>
+        <label>
+          <input type="checkbox" name="alcohol" value="not_alcohol">
+          Не пью алкоголь
+        </label>
+      </div>
+      <div class="form-container">
+        <label for="other_alcohol">Если в списке нет нужного напитка, пожалуйста, впишите его самостоятельно</label>
+        <input type="text" name="other_alcohol" id="other_alcohol">
+      </div>
+      <input type="button" class="btn-form" value="Отправить">
     </form>
+  </div>
+
+  <div class="container">
+    <div class="container-title">
+      Ждем Вас <br />
+      через...
+    </div>
   </div>
 </body>
 </html>
