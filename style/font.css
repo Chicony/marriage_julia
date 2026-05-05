@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "ClassicaTwo";
+  font-display: swap;
+  src: url("../font/ClassicaTwo.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BookAntique";
+  font-display: swap;
+  src: url("../font/BookAntiqua.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BookAntique";
+  font-display: swap;
+  src: url("../font/BookAntiqua-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}

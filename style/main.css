@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #627568;
+  font: 400 18px "BookAntique", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.container-title {
+  margin: 60px 0 40px;
+  font-size: 40px;
+  font: 400 50px "ClassicaTwo", sans-serif;
+}
+
+/* Баннер */
+.banner {
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.banner-flower {
+  position: absolute;
+  top: -300px;
+  left: -165px;
+  transform: rotate(45deg);
+  width: 900px;
+  height: 900px;
+}
+
+.banner-1-img {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  width: 500px;
+}
+
+.banner-2-img {
+  position: absolute;
+  left: -200px;
+  top: 300px;
+  width: 500px;
+  transform: rotate(180deg);
+  opacity: .4;
+} 
+
+.banner-3-img {
+  position: absolute;
+  left: -190px;
+  top: -200px;
+  width: 600px;
+  opacity: .2;
+} 
+
+.banner-4-img {
+  position: absolute;
+  right: -290px;
+  top: 400px;
+  width: 800px;
+  opacity: .6;
+  transform: rotate(90deg);
+} 
+
+.banner-title {
+  font: 400 70px "ClassicaTwo", sans-serif;
+}
+
+.banner-symbol {
+  position: absolute;
+  top: -140px;
+  left: calc(50% - 100px);
+  font: 400 240px "ClassicaTwo", sans-serif;
+  opacity: .2;
+}
+
+/* Блок "Мы ждем Вас" */
+.container-calendar {
+  text-transform: uppercase;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.container-date {
+   position: relative;
+}
+
+.date-img {
+  position: absolute;
+  top: 220px;
+  left: 0;
+  width: 600px;
+  z-index: -1;
+  opacity: .4;
+  transform: rotate(225deg);
+}
+
+.container-calendar .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6px;
+  margin-bottom: 8px;
+}
+
+.container-calendar table td {
+  padding: 6px;
+}
+
+.container-calendar table .box-heart {
+  position: relative;
+}
+
+.container-calendar table .heart {
+  display: block;
+  width: 70px;
+  height: 70px;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  background-image: url("../image/heart.png");
+  background-size: cover;
+  position: absolute;
+  animation: grow 1.5s infinite alternate;
+}
+
+.button-map {
+  border: 1px solid #627568;
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 20px auto 0;
+  border-radius: 50px;
+}
+
+.button-map:hover {
+  cursor: pointer;
+  background-color: rgb(98, 117, 104, .2);
+}
+
+.container-map {
+  margin-top: 40px;
+}
+
+/* Блок "План дня" */
+.container-plan {
+  position: relative;
+}
+
+.plan-1-img {
+  position: absolute;
+  opacity: .4;
+  width: inherit;
+  left: 0;
+}
+
+.plan-2-img {
+  position: absolute;
+  top: -150px;
+  left: -600px;
+  transform: rotate(180deg);
+  opacity: .4;
+  width: 1000px;
+}
+
+.container-plan .vertical-line {
+  width: 2px;
+  height: calc(100% - 120px);
+  background-color: #C0CFC4;
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 1px);
+}
+
+.container-plan .row {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.container-plan .box {
+  width: 145px;
+  height: 145px;
+  margin: 0 30px;
+}
+
+.container-plan .box img{
+  width: 110px;
+  height: 110px;
+}
+
+.container-plan .box-text .time, 
+.container-plan .box-text p {
+  font-size: 20px !important;
+  line-height: 30px;
+}
+
+.container-plan .box-text.left p,
+.container-plan .box-text.left .time {
+  text-align: left;
+}
+
+.container-plan .box-text.right p, 
+.container-plan .box-text.right .time {
+  text-align: right;
+}
+
+/* Блок "Детали" */
+.container-details {
+  position: relative;
+}
+
+.container-details .atom {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #627568;
+  margin: 0 auto;
+}
+
+.container-details p {
+  margin: 30px 0;
+}
+
+.detail-img {
+  position: absolute;
+  top: 150px;
+  right: -450px;
+  z-index: -1;
+  opacity: .6;
+  transform: rotate(-90deg);
+}
+
+/* Блок "Дресс код" */
+.dress-code-box {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.dresscode-img {
+  position: absolute;
+  z-index: -1;
+  left: -400px;
+  top: 40px;
+}
+
+.dress-code-box .box-color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.dress-code-box .box-color:not(:first-child) {
+  margin-left: -10px;
+}
+
+/* Форма обратной связи */
+.feedback-img {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(45deg);
+  top: 100px;
+  left: -360px;
+  width: 1200px;
+  opacity: .6;
+}
+
+.form-feedback .btn-form {
+  padding: 18px 34px;
+  border: none;
+  background-color: #627568;
+  color: #fff;
+  font-size: 16px ;
+}
+
+.form-feedback .btn-form:hover {
+  cursor: pointer;
+}
+
+.form-container {
+  text-align: start;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.form-container label {
+  display: block;
+}
+
+.form-container .input-title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container .input-description {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.form-container input[type='text']{
+  width: 100%;
+  padding: 0 20px;
+  height: 60px;
+  font-size: 16px;
+  color: rgb(98, 117, 104);
+  border: 1px solid rgb(98, 117, 104);
+  background-color: transparent;
+}
+
+/* Таймер */
+.time-img {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(70deg);
+  left: 0;
+  top: -70px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.timer .box {
+    text-align: center;
+    width: 70px;
+    height: 100px;
+}
+
+.timer .number,
+.timer .colon {
+    font-size: 55px;
+}
+
+.timer .text {
+    font-size: 19px;
+    margin-top: 20px;
+}
+
+/* Контакты */
+.contact-container {
+  font-size: 18px;
+  margin: 18px 0;
+}
+
+.footer-img {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(220deg);
+  top: -20px;
+  left: 0;
+  opacity: .4;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}

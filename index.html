@@ -4,154 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Приглашение</title>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      color: #627568;
-    }
-
-    img {
-      display: inline-block;
-      width: 100%;
-    }
-
-    p {
-      font-size: 18px;
-      text-align: center;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      margin: 10px auto;
-      max-width: 600px;
-      text-align: center;
-    }
-
-    .container-title {
-      margin: 40px 0;
-      font-size: 40px;
-    }
-
-    .banner-title {
-      font-size: 45px;
-    }
-
-    /* Блок "План дня" */
-    .container-plan .row {
-      display: flex;
-      justify-content: center;
-      margin-top: 70px;
-    }
-
-    .container-plan .box {
-      width: 100px;
-      height: 100px;
-      margin: 0 30px;
-    }
-
-    .container-plan .box-text{
-      font-size: 20px !important;
-      line-height: 30px;
-    }
-
-    .container-plan .box-text.left p,
-    .container-plan .box-text.left .time {
-      text-align: left;
-    }
-
-    .container-plan .box-text.right p, 
-    .container-plan .box-text.right .time {
-      text-align: right;
-    }
-
-    /* Блок "Детали" */
-    .container-details .atom {
-      width: 10px;
-      height: 10px;
-      border-radius: 50px;
-      background-color: #627568;
-      margin: 0 auto;
-    }
-
-    .container-details p {
-      margin: 30px 0;
-    }
-
-    /* Форма обратной связи */
-    .form-feedback .btn-form {
-      padding: 18px 34px;
-      border: none;
-      background-color: #627568;
-      color: #fff;
-      font-size: 16px ;
-    }
-
-    .form-container {
-      text-align: start;
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .form-container label {
-      display: block;
-    }
-
-    .form-container .input-title {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    .form-container input[type='text']{
-      width: 100%;
-      padding: 0 20px;
-      height: 60px;
-      font-size: 16px;
-      color: rgb(98, 117, 104);
-      border: 1px solid rgb(98, 117, 104);
-      background-color: transparent;
-    }
-
-    /* Таймер */
-    .timer {
-        display: flex;
-        justify-content: center;
-        margin: 40px 0;
-    }
-
-    .timer .box {
-        text-align: center;
-        width: 70px;
-        height: 100px;
-    }
-
-    .timer .number,
-    .timer .colon {
-        font-size: 55px;
-    }
-
-    .timer .text {
-        font-size: 19px;
-        margin-top: 20px;
-    }
-    
-    /* Контакты */
-    .contact-container {
-      font-size: 18px;
-      margin: 18px 0;
-    }
-  </style>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style/font.css">
+  <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
+  <img class="banner-1-img" src="image/_1.png" alt="">
+  <img class="banner-2-img" src="image/_1.png" alt="">
+  <img class="banner-3-img" src="image/_2.png" alt="">
+  <img class="banner-4-img" src="image/_2.png" alt="">
   <div class="container banner">
+    <img class="banner-flower" src="image/flower.png" alt="">
     <div class="banner-title">Андрей</div>
     <div class="banner-symbol">&</div>
     <div class="banner-title">Юлия</div>
@@ -169,16 +32,59 @@
   </div>
 
   <div class="container container-date">
+    <img class="date-img" src="image/_2.png" alt="">
     <div class="container-title">Мы ждём Вас</div>
+    <div class="container-calendar">
+      <div class="title">
+        <div>Июль</div>
+        <div>2026</div>
+      </div>
+      <table style="width: 100%;">
+        <tbody>
+          <tr>
+            <td>ПН</td><td>ВТ</td><td>СР</td><td>ЧТ</td><td>ПТ</td><td>СБ</td><td>ВС</td>
+          </tr>
+          <tr>
+            <td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+          </tr>
+          <tr>
+            <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+          </tr>
+          <tr>
+            <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+          </tr>
+          <tr>
+            <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+          </tr>
+          <tr>
+            <td>27</td><td>28</td><td>29</td><td>30</td>
+            <td class="box-heart"><span class="heart"></span>31</td>
+            <td></td><td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      В усадьбе "Тихие зори", <br />
+      <p style="margin-top: 20px;">
+        Республика Марий Эл, Оршанский район, <br />
+        Марковское сельское поселение, деревня Малый Кугунур
+      </p>
+    </p>
+    <div class="button-map" id="buttonMap">
+      Посмотреть на карте
+    </div>
+    <div class="container-map" id="containerMap" style="display: none;">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9076753049f380eb8faca7ec5cbeb218bf8724260ce07798438aa20b6a3ca75e&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
   </div>
 
-  <div class="container">
-    <div class="container-title">Как добраться</div>
-  </div>
-
-  <div class="container">
+  <div class="container" style="position: relative;">
+    <img class="plan-1-img" src="image/_1.png" alt="">
+    <img class="plan-2-img" src="image/_1.png" alt="">
     <div class="container-title">План дня</div>
     <div class="container-plan">
+      <div class="vertical-line"></div>
       <div class="row">
         <div class="box box-image">
           <img src="image/plans/glasses.png" alt="Welcome">
@@ -228,6 +134,7 @@
   </div>
 
   <div class="container container-details">
+    <img class="detail-img" src="image/_4.png" alt="">
     <div class="container-title">Детали</div>
     <p>
       Ваши улыбки и смех подарят нам незабываемое <br /> 
@@ -249,17 +156,34 @@
     </p>
   </div>
 
-  <div class="container">
+  <div class="container" style="position: relative;">
+    <img class="dresscode-img" src="image/_6.png" alt="">
     <div class="container-title">Дресс-код</div>
     <p>
       Для нас главное - ваше присутствие! Но мы будем рады, <br /> 
       если в своих нарядах Вы поддержите цветовую гамму нашей свадьбы. 
     </p>
+    <div class="dress-code-box">
+      <div class="box-color" style="background-color: #162828;"></div>
+      <div class="box-color" style="background-color: #2a2118;"></div>
+      <div class="box-color" style="background-color: #2b5c3e;"></div>
+      <div class="box-color" style="background-color: #c6ccbe;"></div>
+      <div class="box-color" style="background-color: #c1a790;"></div>
+      <div class="box-color" style="background-color: #d7c6b2;"></div>
+      <div class="box-color" style="background-color: #d7ccd0;"></div>
+    </div>
+    <p>
+      Для девушек - платья/костюмы <br />
+      в цветовой гамме <br />
+      Для мужчин - черный костюм и <br />
+      рубашка белая/в цветовой гамме
+    </p>
   </div>
 
-  <div class="container">
+  <div class="container" style="position: relative;">
+    <img class="feedback-img" src="image/_7.png" alt="">
     <div class="container-title">Анекта гостя</div>
-    <p style="margin-bottom: 20px;">
+    <p style="margin-bottom: 60px;">
       Чтобы мы могли сделать праздник еще <br />
       лучше, ответьте, пожалуйста, на <br />
       несколько вопросов ниже
@@ -330,7 +254,8 @@
     </form>
   </div>
 
-  <div class="container">
+  <div class="container" style="position: relative;">
+    <img class="time-img" src="image/flower.png" alt="">
     <div class="container-title">
       Ждем Вас <br />
       через...
@@ -348,15 +273,18 @@
     </p>
   </div>
 
-  <div class="container">
-    <div class="container-title">
-      С любовью, <br />
-      Андрей и<br />
-      Юлия
+  <div style="overflow-y: hidden;">
+    <div class="container" style="position: relative;">
+      <img class="footer-img" src="image/_2.png" alt="">
+      <div class="container-title" style="margin: 0;">
+        С любовью, <br />
+        Андрей и<br />
+        Юлия
+      </div>
     </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
