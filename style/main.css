@@ -8,6 +8,7 @@
 
 body {
   overflow-x: hidden;
+  min-width: 320px;
 }
 
 img {
@@ -36,7 +37,6 @@ a:hover {
 
 .container-title {
   margin: 60px 0 40px;
-  font-size: 40px;
   font: 400 50px "ClassicaTwo", sans-serif;
 }
 
@@ -58,14 +58,14 @@ a:hover {
 
 .banner-1-img {
   position: absolute;
-  right: -100px;
-  top: -100px;
+  right: 0;
+  top: -140px;
   width: 500px;
 }
 
 .banner-2-img {
   position: absolute;
-  left: -200px;
+  left: 0;
   top: 300px;
   width: 500px;
   transform: rotate(180deg);
@@ -74,16 +74,17 @@ a:hover {
 
 .banner-3-img {
   position: absolute;
-  left: -190px;
-  top: -200px;
+  left: 0;
+  top: -150px;
   width: 600px;
   opacity: .2;
 } 
 
 .banner-4-img {
   position: absolute;
-  right: -290px;
+  right: 0;
   top: 400px;
+  z-index: -1;
   width: 800px;
   opacity: .6;
   transform: rotate(90deg);
@@ -91,6 +92,8 @@ a:hover {
 
 .banner-title {
   font: 400 70px "ClassicaTwo", sans-serif;
+  position: relative;
+  z-index: 10;
 }
 
 .banner-symbol {
@@ -175,8 +178,9 @@ a:hover {
 .plan-1-img {
   position: absolute;
   opacity: .4;
-  width: inherit;
+  width: 1400px;
   left: 0;
+  z-index: -1;
 }
 
 .plan-2-img {
@@ -186,6 +190,7 @@ a:hover {
   transform: rotate(180deg);
   opacity: .4;
   width: 1000px;
+  z-index: -1;
 }
 
 .container-plan .vertical-line {
@@ -281,12 +286,17 @@ a:hover {
 }
 
 /* Форма обратной связи */
+.container-feedback {
+  position: relative;
+  overflow-x: hidden;
+}
+
 .feedback-img {
   position: absolute;
   z-index: -1;
   transform: rotate(45deg);
-  top: 100px;
-  left: -360px;
+  top: 190px;
+  left: -280px;
   width: 1200px;
   opacity: .6;
 }
@@ -385,5 +395,214 @@ a:hover {
   }
   to {
     transform: scale(1.2);
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .plan-1-img {
+    width: 100%;
+    left: 300px;
+    top: 400px;
+  }
+
+  .detail-img {
+    right: -300px;
+  }
+
+  .feedback-img {
+    width: 900px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner-flower {
+    width: 600px;
+    height: 600px;
+    top: -150px;
+    left: -20px;
+  }
+
+  .plan-1-img {
+    width: 100%;
+    left: 200px;
+    top: 400px;
+  }
+
+  .detail-img {
+    right: -210px;
+  }
+
+  .feedback-img {
+    width: 700px;
+    top: 300px;
+    left: -120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner-1-img {
+    top: -80px;
+    width: 350px;
+  }
+
+  .banner-2-img {
+    left: -200px;
+  }
+
+  .banner-3-img {
+    left: -170px;
+  }
+
+  .banner-4-img {
+    width: 400px;
+    top: 650px;
+  }
+
+  .banner-flower {
+    width: 400px;
+    height: 400px;
+    top: -30px;
+    left: 110px;
+  }
+  
+  .plan-1-img {
+    width: 100%;
+    right: 0;
+    left: initial;
+    top: 500px;
+  }
+
+  .plan-2-img {
+    width: 100%;
+    left: -250px;
+    top: 0;
+  }
+
+  .dresscode-img {
+    left: -200px;
+    top: -110px;
+  }
+
+  .detail-img {
+    right: 0;
+  }
+
+  .date-img {
+    width: 500px;
+    top: 260px;
+    left: 50px;
+  }
+
+  .footer-img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 60px;
+  }
+
+  .banner-symbol {
+    font-size: 170px;
+    top: -60px;
+    left: calc(50% - 85px);
+  }
+  
+  .form-feedback {
+    padding: 0 10px;
+  }
+
+  .banner-flower {
+    left: 70px;
+  }
+
+  .banner-4-img {
+    top: 540px;
+  }
+
+  .detail-img {
+    top: -150px;
+  }
+
+  .dresscode-img {
+    left: -80px;
+    top: -50px;
+  }
+
+  .container-date,
+  .container-timer {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 576px) {
+  * {
+    font-size: 16px;
+  }
+
+  .banner {
+    overflow: hidden;
+  }
+
+  .banner-flower {
+    left: -40px;
+  }
+
+  .banner-1-img {
+    display: none;
+  }
+
+  .banner-3-img {
+    width: 480px;
+  }
+
+  .banner-2-img {
+    top: 190px;
+  }
+
+  .banner-4-img {
+    width: 300px;
+    left: -100px;
+    transform: rotate(-90deg);
+  }
+
+  .banner {
+    margin-top: 130px;
+    margin-bottom: 130px;
+  }
+
+  .banner-flower {
+    left: -80px;
+    top: -65px;
+    width: 450px;
+    height: 450px;
+  }
+
+  .banner-symbol {
+    top: -70px;
+    left: calc(50% - 65px);
+  }
+
+  .container-title {
+    font-size: 40px;  
+    line-height: 60px;
+  }
+
+  .container-plan .box-text .time, .container-plan .box-text p {
+    font-size: 16px !important;
+    line-height: 26px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .feedback-img {
+    width: 500px;
+  }
+
+  .footer-img {
+    width: 300px;
   }
 }
